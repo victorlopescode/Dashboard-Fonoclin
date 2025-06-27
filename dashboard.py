@@ -1,10 +1,8 @@
 import pandas as pd
-import openpyxl
 import streamlit as st
 
 # Adiciona o logotipo ao topo do dashboard
 
-st.image(r"D:/Dashboard Fonoclin/MARCA-D-AGUA-FONOCLIN.png", width=200)  # Use barra normal ou dupla barra
 
 df = pd.read_excel(r'D:\\Testes\\Fonoclin - Teste.xlsx')
 df = df.iloc[3:].reset_index(drop=True)
