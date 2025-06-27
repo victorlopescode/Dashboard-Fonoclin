@@ -1,10 +1,11 @@
 import pandas as pd
 import streamlit as st
 
-# Adiciona o logotipo ao topo do dashboard
+
+df = pd.read_excel('Fonoclin\dados_fonoclin.xlsx')
 
 
-df = pd.read_excel(r'D:\\Testes\\dados_fonoclin.xlsx')
+
 df = df.iloc[3:].reset_index(drop=True)
 df = df.drop(df.columns[0] ,axis=1)
 df = df.drop(df.columns[4] ,axis=1)
