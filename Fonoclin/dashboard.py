@@ -2,9 +2,14 @@ import pandas as pd
 import streamlit as st
 
 
-df = pd.read_excel('Fonoclin\\dados_fonoclin.xlsx')
+uploaded_file = st.file_uploader(
+    "Fonoclin\dados_fonoclin.xlsx", accept_multiple_files=False)
+if uploaded_file is not None:
+    file_name = uploaded_file
+else:
+    file_name = "Fonoclin\dados_fonoclin.xlsx"
 
-
+df = pd.read_excel('Fonoclin\dados_fonoclin.xlsx')
 
 df = df.iloc[3:].reset_index(drop=True)
 df = df.drop(df.columns[0] ,axis=1)
