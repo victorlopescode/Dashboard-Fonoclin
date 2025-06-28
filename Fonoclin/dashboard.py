@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 
+# Adiciona o logotipo ao topo do dashboard
+st.image("Fonoclin_logo.png", width=200)  # Certifique-se de salvar a imagem enviada como 'Fonoclin_logo.png' na mesma pasta deste script
+
 
 uploaded_file = st.file_uploader(
     "Fonoclin\dados_fonoclin.xlsx", accept_multiple_files=False)
