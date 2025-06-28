@@ -93,5 +93,5 @@ st.metric("Quantidade de Faltas", qtd_faltas)
 
 # Tabela detalhada dos atendimentos
 st.subheader("Detalhamento dos Atendimentos")
-st.dataframe(df_filtrado[['Data', 'Horário', 'Paciente', 'Atendimento', 'Especialidade', 'Valor Empresa', 'Valor Profissional', 'Saldo Empresa']])
+st.dataframe(df_filtrado[['Data', 'Horário', 'Profissional', 'Atendimento', 'Especialidade', 'Valor Empresa', 'Valor Profissional', 'Saldo Empresa']])
 
